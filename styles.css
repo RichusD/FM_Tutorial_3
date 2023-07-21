@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+    font-size: 13px;
+}
+
+body {
+    background-color: #edf2f8;
+    height: 100vh;
+}
+
+/*#### CONTENT - MOBILE FIRST ###############################*/
+
+#testimonial-grid-container{
+    padding: 10% 5% 0 5%;
+    min-width: 180px;
+}
+
+.grid-item{
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.1);
+}
+
+.reviewer-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position:relative;
+    z-index: 2;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 2px solid rgba(115, 115, 115, 0.5);
+    width: 30px;
+}
+
+.rname-and-title{
+    margin-left: 10px;
+}
+
+.reviewer-name{
+    font-weight: 700;
+}
+
+.reviewer-title,
+.review-text {
+    opacity: 70%;
+}
+
+.quote{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+#testimonial-1,
+#testimonial-2,
+#testimonial-4{
+    color: white;
+}
+
+#testimonial-3,
+#testimonial-5{
+    background-color: #ffffff;
+    color: rgb(66, 66, 66);
+}
+
+#testimonial-1 {
+    background-color: #733fc8;
+    position: relative;
+    z-index: 0;
+}
+
+#quote-design{
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+}
+
+#testimonial-2 {
+    background-color: #49556b;
+}
+
+#testimonial-4 {
+    background-color: #18202d;
+}
+
+/*#### TABLET ######################################*/
+@media (min-width: 850px){
+    
+    body,
+    #testimonial-grid-container,
+    #main-left-container,
+    #main-left-top-subcontainer,
+    #main-left-bottom-subcontainer,
+    .grid-item {
+        display: flex;
+
+    }
+
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonial-grid-container{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0;        
+    }
+
+    #main-left-container {
+        flex-direction: column;
+        flex-basis: 75%;
+    } 
+    #main-left-top-subcontainer,
+    #main-left-bottom-subcontainer {
+        flex-basis: 50%;
+    }
+
+    #main-left-container .grid-item {
+        margin-right: 15px;
+    }
+
+    .grid-item{
+        flex-direction: column;
+        justify-content: space-around;
+        padding:30px
+    }
+
+    .reviewer-container,
+    .quote{
+        margin-bottom: 15px;
+    }
+
+    #testimonial-1 {
+        flex-basis: 65%;
+    }
+    
+    #testimonial-2 {
+        flex-basis: 35%;
+    }
+    
+    #testimonial-3 {
+        flex-basis: 35%;
+    }
+
+    #testimonial-4 {
+        flex-basis: 65%;
+    }
+    #testimonial-5{
+        flex-basis: 25%;
+    }
+    
+}
+
+/*#### DESKTOP ######################################*/
+@media (min-width: 1062px){
+    
+    body,
+    #testimonial-grid-container,
+    #main-left-container,
+    #main-left-top-subcontainer,
+    #main-left-bottom-subcontainer,
+    .grid-item {
+        display: flex;
+    }
+
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #testimonial-grid-container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;        
+    }
+
+    #main-left-container {
+        flex-direction: column;
+        flex-basis: 75%;
+    } 
+    #main-left-top-subcontainer,
+    #main-left-bottom-subcontainer {
+        flex-basis: 50%;
+    }
+
+    #main-left-container .grid-item {
+        margin-right: 15px;
+    }
+
+    .grid-item{
+        flex-direction: column;
+        justify-content: space-around;
+        padding:30px
+    }
+
+    .reviewer-container,
+    .quote{
+        margin-bottom: 15px;
+    }
+
+    #testimonial-1 {
+        flex-basis: 65%;
+    }
+    
+    #testimonial-2 {
+        flex-basis: 35%;
+    }
+    
+    #testimonial-3 {
+        flex-basis: 35%;
+
+    }
+
+    #testimonial-4 {
+        flex-basis: 65%;
+    }
+    #testimonial-5{
+        flex-basis: 25%;
+    }
+    
+}
